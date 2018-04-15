@@ -44,8 +44,16 @@ class PageHome extends Component {
                                 </span>
                             </Link>
                         </NavItem>
-                        <NavItem href='#'><span className="menu_text" style={{ float: "left" }}>Our Story</span></NavItem>
-                        <NavItem href='#'><span className="menu_text" style={{ float: "left" }}>About</span></NavItem>
+                        <NavItem href='#'>
+                            <Link style={{ width: '100%', float: "left" }} activeClass="active" className="test2" to="our_story" spy={true} smooth={true} duration={500} >
+                                <span className="menu_text" style={{ float: "left" }}>Our Story</span>
+                            </Link>
+                        </NavItem>
+                        <NavItem href='#'>
+                            <Link style={{ width: '100%', float: "left" }} activeClass="active" className="test2" to="about" spy={true} smooth={true} duration={500} >
+                                <span className="menu_text" style={{ float: "left" }}>About</span>
+                            </Link>
+                        </NavItem>
                     </Navbar>
                     <div className='wrapper_' style={{ backgroundColor: '#212121' }}>
                         <P
