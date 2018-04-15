@@ -27,18 +27,18 @@ class PageHome extends Component {
     }
     render() {
         return (
-            <Col m={12} s={12} style={{overflow:'hidden'}}>
-                <Element name="test1">
+            <Col m={12} s={12} style={{ overflow: 'hidden' }}>
+                <Element name="home">
                     <Navbar fixed={true} className='navbar-fixed' brand={<span style={{ marginLeft: 10 }} className="brand">MALAS<span style={{ color: '#2196F3' }}>KODING</span></span>} style={{ backgroundColor: '#212121' }} right>
                         <NavItem>
-                            <Link style={{ float: "left", width: '100%' }} activeClass="active" className="test1" to="test1" spy={true} smooth={true} duration={500} >
+                            <Link style={{ float: "left", width: '100%' }} activeClass="active" className="test1" to="home" spy={true} smooth={true} duration={500} >
                                 <span className="menu_text">
                                     Home
                                 </span>
                             </Link>
                         </NavItem>
                         <NavItem>
-                            <Link style={{ width: '100%', float: "left" }} activeClass="active" className="test2" to="test2" spy={true} smooth={true} duration={500} >
+                            <Link style={{ width: '100%', float: "left" }} activeClass="active" className="test2" to="our_team" spy={true} smooth={true} duration={500} >
                                 <span className="menu_text">
                                     Our Team
                                 </span>
@@ -47,8 +47,8 @@ class PageHome extends Component {
                         <NavItem href='#'><span className="menu_text" style={{ float: "left" }}>Our Story</span></NavItem>
                         <NavItem href='#'><span className="menu_text" style={{ float: "left" }}>About</span></NavItem>
                     </Navbar>
-                    <div className='wrapper_' style={{backgroundColor:'#212121'}}>
-                    <P 
+                    <div className='wrapper_' style={{ backgroundColor: '#212121' }}>
+                        <P
                             params={{
                                 particles: {
                                     number: {
@@ -69,7 +69,7 @@ class PageHome extends Component {
                                         anim: {
                                             enable: true
                                         }
-    
+
                                     },
                                     shape: {
                                         type: 'triangle'
@@ -83,16 +83,36 @@ class PageHome extends Component {
                                 width: "100%",
                                 height: "100%"
                             }} />
-                            <span>
-                                Particles
+                        <span>
+                            Particles
                             </span>
                     </div>
                 </Element>
-                <Element name="test2" className="element" >
+                <Element name="our_team" className="element" >
                     <div style={{
                         width: "100%",
                         height: "100vh",
-                        position:'static',
+                        position: 'static',
+                        backgroundColor: '#FFFFFF'
+                    }}>
+
+                    </div>
+                </Element>
+                <Element name="our_story">
+                    <div style={{
+                        width: "100%",
+                        height: "100vh",
+                        position: 'static',
+                        backgroundColor: '#FFFFFF'
+                    }}>
+
+                    </div>
+                </Element>
+                <Element name="about">
+                    <div style={{
+                        width: "100%",
+                        height: "100vh",
+                        position: 'static',
                         backgroundColor: '#FFFFFF'
                     }}>
 
