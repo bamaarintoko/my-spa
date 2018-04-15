@@ -24,6 +24,9 @@
 .text {
     font-family: 'Anton', sans-serif;
 }
+.text_ {
+    font-family: 'Inconsolata', sans-serif;
+}
 
   #sidenav-overlay { margin-left: 300px; }
   #sidenav-overlay { z-index: 1; }

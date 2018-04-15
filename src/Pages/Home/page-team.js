@@ -12,7 +12,7 @@ class OurTeam extends Component {
             }}>
                 <div className='parent' style={{backgroundColor: '#ffffff'
                 }}>
-                    <Row className='child'>
+                    <Row className='child' style={{paddingTop:60}}>
                         <Col m={3} s={12}>
                             
                         </Col>
@@ -33,8 +33,8 @@ class OurTeam extends Component {
                 <div className='parent' style={{backgroundColor: '#ffffff'
                 }}>
                     <Row className='child' style={{textAlign:'center'}}>
-                    <h2>CREATED BY EXPERTS</h2>
-We believe in a diverse range of talent and personality brings creative skills and ideas to the web.
+                    <h2 className='text'>CREATED BY EXPERTS</h2>
+<p className='text_'>We believe in a diverse range of talent and personality brings creative skills and ideas to the web.</p>
                     </Row>
                 </div>
 
