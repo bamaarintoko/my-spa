@@ -9,6 +9,9 @@ import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, 
 import './a.css'
 import { Navbar, NavItem } from "react-materialize";
 import { Scrollbars } from 'react-custom-scrollbars';
+import OurTeam from './page-team';
+import OurStory from './page-story';
+import About from './page-about';
 class PageHome extends Component {
     componentDidMount() {
 
@@ -97,34 +100,13 @@ class PageHome extends Component {
                     </div>
                 </Element>
                 <Element name="our_team" className="element" >
-                    <div style={{
-                        width: "100%",
-                        height: "100vh",
-                        position: 'static',
-                        backgroundColor: '#FFFFFF'
-                    }}>
-
-                    </div>
+                    <OurTeam/>
                 </Element>
                 <Element name="our_story">
-                    <div style={{
-                        width: "100%",
-                        height: "100vh",
-                        position: 'static',
-                        backgroundColor: '#FFFFFF'
-                    }}>
-
-                    </div>
+                    <OurStory/>
                 </Element>
                 <Element name="about">
-                    <div style={{
-                        width: "100%",
-                        height: "100vh",
-                        position: 'static',
-                        backgroundColor: '#FFFFFF'
-                    }}>
-
-                    </div>
+                    <About/>
                 </Element>
             </Col>
         );
