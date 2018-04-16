@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Col, Card, Row } from 'react-materialize'
+import { Col, Card, Row,CardTitle } from 'react-materialize'
 
 class OurTeam extends Component {
     render() {
@@ -12,18 +12,24 @@ class OurTeam extends Component {
             }}>
                 <div className='parent' style={{backgroundColor: '#ffffff'
                 }}>
-                    <Row className='child' style={{paddingTop:60}}>
+                    <Row className='child' style={{paddingTop:100}}>
                         <Col m={3} s={12}>
                             
                         </Col>
                         <Col m={3} s={12}>
-                            <Card className='blue-grey darken-1' textClassName='white-text' title='Card title' actions={[<a href='#'>This is a link</a>]}>
-                                I am a very simple card.
+                            <Card style={{backgroundColor:'#FFFFFF'}} className='white' 
+                                textClassName='white-text' 
+                                header={<CardTitle image={require("../../Assets/Team/team_one.png")}></CardTitle>}
+                                >
+                                
                             </Card>
                         </Col>
                         <Col m={3} s={12}>
-                            <Card className='blue-grey darken-1' textClassName='white-text' title='Card title' actions={[<a href='#'>This is a link</a>]}>
-                                I am a very simple card.
+                        <Card style={{backgroundColor:'#FFFFFF'}} className='white' 
+                                textClassName='white-text' 
+                                header={<CardTitle image={require("../../Assets/Team/team_one.png")}></CardTitle>}
+                                >
+                                
                             </Card>
                         </Col>
                         <Col m={3} s={12}>
