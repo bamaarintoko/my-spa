@@ -33,26 +33,26 @@ class PageHome extends Component {
             <Col m={12} s={12} style={{ overflow: 'hidden' }}>
                 <Element name="home">
                     <Navbar fixed={true} className='navbar-fixed' brand={<span style={{ marginLeft: 10 }} className="brand">MALAS<span style={{ color: '#2196F3' }}>KODING</span></span>} style={{ backgroundColor: '#212121' }} right>
-                        <NavItem>
+                        <NavItem componentClass="menu_text">
                             <Link style={{ float: "left", width: '100%' }} activeClass="active" className="test1" to="home" spy={true} smooth={true} duration={500} >
                                 <span className="menu_text">
                                     Home
                                 </span>
                             </Link>
                         </NavItem>
-                        <NavItem>
+                        <NavItem componentClass="span">
                             <Link style={{ width: '100%', float: "left" }} activeClass="active" className="test2" to="our_team" spy={true} smooth={true} duration={500} >
                                 <span className="menu_text">
                                     Our Team
                                 </span>
                             </Link>
                         </NavItem>
-                        <NavItem href='#'>
+                        <NavItem componentClass="span">
                             <Link style={{ width: '100%', float: "left" }} activeClass="active" className="test2" to="our_story" spy={true} smooth={true} duration={500} >
                                 <span className="menu_text" style={{ float: "left" }}>Our Story</span>
                             </Link>
                         </NavItem>
-                        <NavItem href='#'>
+                        <NavItem componentClass="span">
                             <Link style={{ width: '100%', float: "left" }} activeClass="active" className="test2" to="about" spy={true} smooth={true} duration={500} >
                                 <span className="menu_text" style={{ float: "left" }}>About</span>
                             </Link>
